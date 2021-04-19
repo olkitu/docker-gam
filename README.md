@@ -12,7 +12,7 @@ Linux & MacOS
 
 ```bash
 curl -o gam https://raw.githubusercontent.com/olkitu/docker-gam/main/gam
-chmox + ./gam
+chmod +x ./gam
 ./gam
 ```
 
