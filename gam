@@ -1,6 +1,6 @@
 #!/bin/bash
 
 docker run --rm -it \
-    -v gam-volume:/home/gam/.bin/gam \
+    -v gam-volume:/home/gam/ \
     --name docker-gam \
     olkitu/docker-gam "$@"
