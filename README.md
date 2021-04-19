@@ -6,34 +6,29 @@ GAM is CLI to manage Google Workspace: https://github.com/jay0lee/GAM/ . This is
 
 ## Setup
 
-On first run this will start setup.
+Start simple setup by downloading bash script and execute it.
 
-```
-docker run --rm -it -v gam-volume:/home/gam --name docker-gam olkitu/docker-gam
-```
+Linux & MacOS
 
-Follow then setup guide. This is only CLI installation on Linux Alpine.
-
-## After setup
-
-After setup, just run 
-
-```
-docker run --rm -it -v gam-volume:/home/gam --name docker-gam olkitu/docker-gam [command]
+```bash
+curl -o gam https://raw.githubusercontent.com/olkitu/docker-gam/main/gam
+chmox + ./gam
+./gam
 ```
 
-Example
+On Windows
+
+```powershell
+Invoke-WebRequest https://raw.githubusercontent.com/olkitu/docker-gam/main/gam.bat -OutFile gam.bat
+.\gam.bat
+```
+
+This will on first time install and setup GAM to you. Follow instructions on screen.
+
+After setup you can run just `./gam` on directory to execute GAM commands.
 
 ```
-docker run --rm -it -v gam-volume:/home/gam/ --name docker-gam olkitu/docker-gam info domain
-```
-
-## Delete
-
-Remove docker volume to delete from your local computer. If you delete volume then you have to set up again to use GAM.
-
-```
-docker volume rm gam-volume
+./gam info domain
 ```
 
 ## License
