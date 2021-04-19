@@ -16,10 +16,10 @@ chmox + ./gam
 ./gam
 ```
 
-On Windows
+Windows
 
 ```powershell
-Invoke-WebRequest https://raw.githubusercontent.com/olkitu/docker-gam/main/gam.bat -OutFile gam.bat
+powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/olkitu/docker-gam/main/gam.bat -OutFile gam.bat"
 .\gam.bat
 ```
 
