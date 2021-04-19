@@ -1,5 +1,7 @@
 FROM python:3.6-alpine3.13
 
+LABEL maintainer="minh@truong.fi" 
+
 ARG USER=gam
 ENV HOME /home/$USER
 

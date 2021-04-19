@@ -7,7 +7,7 @@ GAM is CLI to manage Google Workspace: https://github.com/jay0lee/GAM/ . This is
 On first run this will start setup.
 
 ```
-docker run --rm -it -v gam-volume:/home/gam/.bin/gam --name docker-gam olkitu/docker-gam
+docker run --rm -it -v gam-volume:/home/gam --name docker-gam olkitu/docker-gam
 ```
 
 Follow then setup guide. This is only CLI installation on Linux Alpine.
@@ -17,13 +17,13 @@ Follow then setup guide. This is only CLI installation on Linux Alpine.
 After setup, just run 
 
 ```
-docker run --rm -it -v gam-volume:/home/gam/.bin/gam --name docker-gam olkitu/docker-gam [command]
+docker run --rm -it -v gam-volume:/home/gam --name docker-gam olkitu/docker-gam [command]
 ```
 
 Example
 
 ```
-docker run --rm -it -v gam-volume:/home/gam/.bin/gam --name docker-gam olkitu/docker-gam info domain
+docker run --rm -it -v gam-volume:/home/gam/ --name docker-gam olkitu/docker-gam info domain
 ```
 
 ## Delete
@@ -33,3 +33,7 @@ Remove docker volume to delete from your local computer. If you delete volume th
 ```
 docker volume rm gam-volume
 ```
+
+## License
+
+[MIT](https://github.com/olkitu/docker-gam/blob/main/LICENSE)
