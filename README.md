@@ -2,7 +2,7 @@
 
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/olkitu/docker-gam) ![Docker Pulls](https://img.shields.io/docker/pulls/olkitu/docker-gam) ![Docker Stars](https://img.shields.io/docker/stars/olkitu/docker-gam)
 
-GAM is CLI to manage Google Workspace: https://github.com/jay0lee/GAM/ . This is just container version of GAM and will install it to Docker Container.
+GAM is CLI to manage Google Workspace: https://github.com/jay0lee/GAM/ .
 
 ## Setup
 
@@ -33,6 +33,8 @@ docker run --rm -it \
 ```
 
 This will on first time install and setup GAM to you. Follow instructions on screen.
+
+## Run
 
 After setup you can run just `./gam` on directory to execute GAM commands.
 
