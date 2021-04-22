@@ -48,6 +48,10 @@ After setup you can run just `./gam` on directory to execute GAM commands.
 ./gam update-gam
 ```
 
+## Known Issue
+
+The persistent volume is not secure on shared machine but it's easiest way to setup GAM with Docker. After setup you can optionally copy `oauth2.txt`, `oauth2service.json` and `client_secrets.json` files to your local machine and bind mount to container and remove these from persistent volume.
+
 ## License
 
 [MIT](https://github.com/olkitu/docker-gam/blob/main/LICENSE)

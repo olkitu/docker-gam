@@ -2,6 +2,10 @@ FROM python:3.8-alpine3.13
 
 LABEL maintainer="minh@truong.fi" 
 
+ARG VERSION
+ARG BUILD_DATE
+ARG VCS_REF
+
 ARG USER=gam
 ENV HOME /home/$USER
 
