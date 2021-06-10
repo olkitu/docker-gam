@@ -1,2 +1,2 @@
 @echo off
-docker run --rm -it -v gam-volume:/home/gam/ --name docker-gam olkitu/docker-gam %*
+docker run --rm -it -v gam-volume:/home/gam/ --name docker-gam ghcr.io/olkitu/docker-gam %*

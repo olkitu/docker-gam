@@ -29,7 +29,7 @@ Docker
 docker run --rm -it \
     -v gam-volume:/home/gam/ \
     --name docker-gam \
-    olkitu/docker-gam
+    ghcr.io/olkitu/docker-gam
 ```
 
 This will on first time install and setup GAM to you. Follow instructions on screen.
